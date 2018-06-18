@@ -9,6 +9,7 @@ option = gets.chomp.downcase.strip
        when "no"
            puts "you are eaten by a monster"
             exit
+        
     end
 
 direction = gets.chomp.downcase
