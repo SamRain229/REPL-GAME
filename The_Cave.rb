@@ -1,13 +1,16 @@
+puts "What is your name?"
+main_Char = gets.chomp.strip
 puts "You enter a spooky cave"
 puts "Do you light your torch?"
+
 
 option = gets.chomp.downcase.strip
 
     case option
        when "yes"
-           puts "You see paths leading Left and Right"
+           puts "#{main_Char} ses two paths leading Left and Right"
        when "no"
-           puts "You are eaten by a monster
+           puts "#{main_Char} is eaten by a large ogre.
                  Sorry, please try again"
             exit
         
@@ -16,27 +19,29 @@ option = gets.chomp.downcase.strip
 direction = gets.chomp.downcase
     case direction
         when "left"
-            puts "You enter a room with a chest in it, do you open it?"
+            puts "#{main_Char} enters a room with a chest in it, does #{main_Char} open it?"
         when "right"
-            puts "you fall into a hole"
+            puts "#{main_Char} fall into a hole.
+Sorry, please try again."
               exit
     end
 
 chest = gets.chomp.downcase.strip
     case chest
         when "yes"
-        puts "you find 300 gold and a map"
+        puts "#{main_Char} finds 300 gold coins and a map"
         when "no"
-        puts "you wander in the labrynth until you pass out"
+        puts "#{main_Char} wanders through the labrynthian maze of tunnels and passages until they pass out
+Sorry, please try again"
         exit
     end
 
-puts "Will you read the map?"
+puts "Will #{main_Char} read the map?"
 the_map = gets.chomp.downcase.strip
 
     case the_map
         when "yes"
-            puts "You find the path to the "
+            puts "#{main_Char} finds the path to the Main Room, where the "
     end
 
-puts "Thank you for playing my game"
+puts "Thank you, #{main_Char}, for playing my game"
