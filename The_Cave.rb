@@ -5,9 +5,10 @@ option = gets.chomp.downcase.strip
 
     case option
        when "yes"
-           puts "you see paths leading Left and Right"
+           puts "You see paths leading Left and Right"
        when "no"
-           puts "you are eaten by a monster"
+           puts "You are eaten by a monster
+                 Sorry, please try again"
             exit
         
     end
@@ -29,4 +30,13 @@ chest = gets.chomp.downcase.strip
         puts "you wander in the labrynth until you pass out"
         exit
     end
+
+puts "Will you read the map?"
+the_map = gets.chomp.downcase.strip
+
+    case the_map
+        when "yes"
+            puts "You find the path to the "
+    end
+
 puts "Thank you for playing my game"
