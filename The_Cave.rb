@@ -38,6 +38,10 @@ case direction
             puts "#{main_Char} falls into an infinite loop bug.
     Sorry, please try again."
               exit
+     else
+        puts "#{main_Char} is eaten by a large bug.
+                 Sorry, please try again"
+        exit 
     end
 
 #Third level
@@ -51,6 +55,10 @@ case chest
             puts "#{main_Char} wanders through the labrynthian maze of tunnels and passages until they pass out
     Sorry, please try again"
         exit
+     else
+        puts "#{main_Char} is eaten by a large bug.
+                 Sorry, please try again"
+        exit 
     end
 
 #Fourth Level
@@ -64,6 +72,10 @@ case the_map
             puts "#{main_Char} never finds the goal of their quest and becomes lost in The Cave
 Sorry, please try again"
         exit
+     else
+        puts "#{main_Char} is eaten by a large bug.
+                 Sorry, please try again"
+        exit 
     end
 
 #end of game
@@ -78,5 +90,8 @@ case happy
             puts "#{main_Char} has won the game"
         when "no"
             puts "#{main_Char} does not know why they played"
+     else
+        puts "Uhhhhh, sure"
+        exit 
     end
 puts "Thank you, #{main_Char}, for playing my game"
