@@ -92,7 +92,7 @@ case happy
         when "no"
             puts "#{main_Char} does not know why they played"
      else
-        puts "Uhhhhh, sure"
+        puts "Uhhhhhh, sure"
         exit 
     end
 puts "Thank you, #{main_Char}, for playing my game"
