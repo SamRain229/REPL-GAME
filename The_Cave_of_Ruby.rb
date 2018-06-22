@@ -4,10 +4,11 @@
 
 #Gets the users name
 puts "What is your name?"
-main_Char = gets.chomp.strip
-
+main_Char = gets.chomp.strip.capitalize
+    
 #Intro
-puts "You enter a spooky cave"
+puts "You encounter The Cave of Ruby.
+       You enter and see a torch and take it"
 puts "Do you light your torch? (yes/no)"
 
 #First Level
@@ -21,7 +22,7 @@ case option
                  Sorry, please try again"
             exit
        else
-        puts "#{main_Char} is eaten by a large bug.
+        puts "#{main_Char} is lost to the code.
                  Sorry, please try again"
         exit 
         
@@ -39,7 +40,7 @@ case direction
     Sorry, please try again."
               exit
      else
-        puts "#{main_Char} is eaten by a large bug.
+        puts "#{main_Char} cant find their way out.
                  Sorry, please try again"
         exit 
     end
@@ -56,7 +57,7 @@ case chest
     Sorry, please try again"
         exit
      else
-        puts "#{main_Char} is eaten by a large bug.
+        puts "#{main_Char} loses them self in a loop.
                  Sorry, please try again"
         exit 
     end
@@ -73,13 +74,13 @@ case the_map
 Sorry, please try again"
         exit
      else
-        puts "#{main_Char} is eaten by a large bug.
+        puts "#{main_Char} finds a false idol and is lost in the Cave.
                  Sorry, please try again"
         exit 
     end
 
 #end of game
-puts "#{main_Char} has found the object of their quest, The Sword of Ruby. #{main_Char} can now go
+puts "#{main_Char} has found the object of their quest, The Sword of Ruby ⚔️. #{main_Char} can now go
 and finish their quest to become the greatest progammer"
 
 puts "Are you happy?"
